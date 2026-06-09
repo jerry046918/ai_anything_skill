@@ -1,9 +1,9 @@
 ---
-name: ai-everything-report
+name: ai-anything
 description: Use when the user mentions any business, industry, domain, or workflow — triggers a structured interview to extract business modules and processes, then generates a comprehensive AI-Native transformation report with four-layer architecture, Agent-driven redesign, and Super Orchestration Layer for every business aspect
 ---
 
-# AI Everything Report
+# AI Anything
 
 ## Overview
 

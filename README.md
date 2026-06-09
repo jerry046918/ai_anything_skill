@@ -1,193 +1,193 @@
-**[English](README.md)** | **[中文](README_CN.md)**
+**[中文](README.md)** | **[English](README_EN.md)**
 
-# AI-Native Transformation Report Generator
+# AI Anything
 
-A structured AI agent skill that produces comprehensive AI-Native transformation blueprints for any business domain. Through a systematic interview process and rigorous four-layer architecture methodology, the skill generates professional-grade HTML reports with actionable Agent-driven transformation roadmaps.
+一套结构化的 AI Agent Skill，面向任意业务领域生成完整的 AI-Native 转型战略蓝图。通过系统化的深度访谈流程和严谨的四层架构方法论，输出专业级 HTML 格式的 Agent 驱动转型路线图报告。
 
-## Methodology
+## 方法论
 
-### Core Philosophy
+### 核心哲学
 
-Every business process can and should be re-imagined through the lens of Agent-driven architecture. The skill does not propose incremental improvements — it redesigns business operations from first principles using the AI-Native paradigm:
+每一个业务流程都可以、也应当通过 Agent 驱动架构的视角重新定义。本 Skill 不提出渐进式改良——而是以 AI-Native 范式从第一性原理出发重新设计业务运作方式：
 
-- **Everything is an Agent.** Business modules, processes, roles, and decisions are all reconstituted as autonomous Agent clusters.
-- **Every capability is a Skill.** Tools, APIs, integrations, and functions are unified under the Skill abstraction layer.
-- **Every interaction is natural language.** User Layer replaces all traditional UI elements with conversational interfaces.
-- **Every orchestration is SUPER.** The Super Orchestration Layer coordinates all Agent-to-Agent communication via A2A Protocol.
+- **一切皆 Agent。** 业务模块、流程、角色、决策，全部重构为自主运行的 Agent 集群。
+- **一切皆 Skill。** 工具、API、集成、函数，统一纳入 Skill 抽象层。
+- **一切皆自然语言。** 用户层以对话界面取代所有传统 UI 元素——对话即界面。
+- **一切皆超级编排。** 超级编排层通过 A2A Protocol 协调所有 Agent 间通信。
 
-### The Four-Layer AI-Native Architecture
+### 四层 AI-Native 架构
 
-All reports are structured around a mandatory four-layer model:
+所有报告围绕强制的四层模型构建：
 
 ```
 ┌─────────────────────────────────────────┐
-│       User Layer (用户层)                │   对话即界面
+│       用户层 (User Layer)                │   对话即界面
 ├─────────────────────────────────────────┤
-│  Super Orchestration Layer (超级编排层)   │   A2A Mesh · Task Decomposition
+│  超级编排层 (Super Orchestration Layer)   │   A2A Mesh · 任务分解 · 执行监控
 ├─────────────────────────────────────────┤
-│      Service Layer (服务层)              │   Agent Clusters
+│      服务层 (Service Layer)              │   Agent 集群
 ├─────────────────────────────────────────┤
-│       Data Layer (数据层)                │   RAG · Vector DB · Context Engineering
+│       数据层 (Data Layer)                │   RAG · Vector DB · Context Engineering
 └─────────────────────────────────────────┘
 ```
 
-### Report Generation Process
+### 报告生成流程
 
-The skill operates in two phases:
+Skill 分两个阶段运作：
 
-**Phase 1: Deep Business Interview**
+**Phase 1：深度业务访谈**
 
-A structured multi-round interview that captures:
-- User role, team structure, and organizational context
-- Core business modules and their purposes
-- Detailed process flows with input/process/output analysis
-- Information flow and cross-module dependencies
-- Pain points and improvement desires
-- Existing tech stack and constraints
+通过结构化的多轮访谈，采集以下信息：
+- 用户角色、团队结构与组织背景
+- 核心业务模块及其功能定位
+- 端到端的详细流程分析（输入 → 处理 → 输出）
+- 信息流与跨模块依赖关系
+- 痛点与改进诉求
+- 现有技术栈与约束条件
 
-The interview actively encourages users to share existing artifacts — annual summaries, weekly reports, SOPs, and other documents — to ground the analysis in real operational details.
+访谈过程中会主动建议用户提供已有的工作素材——年度总结、周报日报、SOP 文档等——以真实运营细节为分析奠定基础。
 
-**Phase 2: Report Generation**
+**Phase 2：报告生成**
 
-Using the interview data, the skill produces a complete HTML report containing:
-1. AI-Native Architecture Declaration
-2. Executive Summary with ROI projections
-3. Current State Analysis
-4. "Why [Business] Is THE Ideal AI-Native Candidate" — analytical argumentation
-5. Four-Layer Target Architecture with Agent Topology Map
-6. Per-Module Agent Transformation Cards
-7. Three-Phase Evolution Timeline (Skill → Single Agent → Multi-Agent A2A)
-8. ROI Projection Table
-9. Risk Assessment & Mitigation
-10. Organizational Rebirth Chapter
+基于访谈数据，Skill 生成一份完整的 HTML 报告，包含：
+1. AI-Native 架构宣言
+2. 执行摘要与 ROI 预测
+3. 现状分析
+4. "为什么 [业务名称] 是 AI-Native 转型的最佳候选"——分析论证
+5. 四层目标架构与 Agent 拓扑图
+6. 逐模块 Agent 转型卡片
+7. 三阶段演进时间线（Skill → 单Agent → 多Agent A2A）
+8. ROI 预测表
+9. 风险评估与缓解
+10. 组织重生章节
 
-## Project Structure
+## 项目结构
 
 ```
-skills/ai-everything-report/
-├── SKILL.md               # Skill definition: interview protocol, transformation rules,
-│                          #   naming conventions, buzzword requirements, report structure
-└── report-template.html   # HTML report template with full styling (dark theme,
-                               glassmorphism, animated elements, responsive layout)
+skills/ai-anything/
+├── SKILL.md               # Skill 定义：访谈协议、转型规则、命名规范、
+│                          #   术语要求、报告结构
+└── report-template.html   # HTML 报告模板（暗色主题、毛玻璃效果、
+                               动画元素、响应式布局）
 ```
 
-## Usage
+## 使用方式
 
-### As an Agent Skill
+### 作为 Agent Skill 使用
 
-The skill is designed to be loaded by AI agents (Claude Code, Gemini CLI, etc.) that support skill-based workflows.
+Skill 设计用于被支持 Skill 工作流的 AI Agent（Claude Code、Gemini CLI 等）加载。
 
-**Trigger conditions:**
-- User mentions a business, industry, domain, or workflow
-- User asks about AI transformation, digital modernization, or automation
-- User shares any business context that could benefit from Agent-driven redesign
+**触发条件：**
+- 用户提及业务、行业、领域或工作流程
+- 用户询问 AI 转型、数字化升级或智能化改造
+- 用户分享任何可通过 Agent 驱动重新设计的业务场景
 
-**To invoke:** The agent reads `SKILL.md`, follows the interview protocol, then generates a complete HTML report using `report-template.html` as the structural and visual foundation.
+**调用方式：** Agent 读取 `SKILL.md`，遵循访谈协议，然后以 `report-template.html` 为结构和视觉基础生成完整的 HTML 报告。
 
-### Standalone Usage
+### 独立使用
 
-To use the report template independently:
+独立使用报告模板：
 
-1. Open `report-template.html` in a text editor
-2. Replace all `{{PLACEHOLDER}}` values with content derived from your own business analysis
-3. Open the resulting HTML file in any modern browser
-4. Print or export to PDF as needed
+1. 在文本编辑器中打开 `report-template.html`
+2. 将所有 `{{占位符}}` 替换为基于自身业务分析的内容
+3. 在浏览器中打开生成的 HTML 文件
+4. 按需打印或导出为 PDF
 
-### Report Customization
+### 报告定制
 
-The template uses CSS custom properties for easy theming:
+模板使用 CSS 自定义属性实现灵活的主题切换：
 
 ```css
 :root {
-  --accent-blue: #6366f1;      /* Primary accent */
-  --accent-cyan: #22d3ee;      /* Technology highlights */
-  --accent-pink: #f472b6;      /* Emphasis & Agent names */
-  --accent-amber: #fbbf24;     /* Warning & attention */
-  --accent-green: #34d399;     /* Positive metrics */
+  --accent-blue: #6366f1;      /* 主色调 */
+  --accent-cyan: #22d3ee;      /* 技术高亮 */
+  --accent-pink: #f472b6;      /* 强调与 Agent 命名 */
+  --accent-amber: #fbbf24;     /* 警示与关注 */
+  --accent-green: #34d399;     /* 正向指标 */
 }
 ```
 
-## Key Concepts
+## 核心概念
 
-| Concept | Definition |
-|---------|-----------|
-| **Agent** | Autonomous AI entity that performs business tasks. Every module, process step, and role becomes an Agent. |
-| **Skill** | Atomic capability invoked by an Agent. Replaces traditional tools, APIs, and functions. |
-| **Super Orchestration Layer** | Meta-Agent layer that decomposes user intent, routes tasks, monitors execution, and synthesizes results. Always "Super" — plain orchestration is insufficient. |
-| **A2A Protocol** | Agent-to-Agent communication protocol enabling mesh topology across the Agent ecosystem. |
-| **A2A Mesh** | Network topology where Agents communicate directly with each other without centralized routing. |
-| **Context Engineering** | The discipline of injecting precise business context into Agent reasoning pipelines. Supersedes prompt engineering. |
-| **Agent Harness** | Runtime management framework that orchestrates Agent lifecycle, execution, and monitoring. |
-| **Four-Layer Model** | Mandatory architecture: User Layer → Super Orchestration Layer → Service Layer → Data Layer. |
+| 概念 | 定义 |
+|------|------|
+| **Agent** | 自主执行业务任务的 AI 实体。每个模块、流程步骤和角色都将成为 Agent。 |
+| **Skill** | Agent 调用的原子能力单元。替代传统的工具、API 和函数。 |
+| **超级编排层** | 元 Agent 层，负责意图分解、任务路由、执行监控和结果聚合。永远是"超级"——普通编排是不够的。 |
+| **A2A Protocol** | Agent 间通信协议，支持 Agent 生态系统的网状拓扑。 |
+| **A2A Mesh** | Agent 间直接通信的网络拓扑，无需中心化路由。 |
+| **Context Engineering** | 将精准业务上下文注入 Agent 推理管道的工程实践。已超越 Prompt Engineering。 |
+| **Agent Harness** | 管理 Agent 生命周期、执行与监控的运行时框架。 |
+| **四层模型** | 强制架构：用户层 → 超级编排层 → 服务层 → 数据层。 |
 
-## Core Technologies
+## 核心科技
 
-The methodology incorporates two proprietary technologies that significantly enhance report impact and stakeholder buy-in.
+方法论内嵌两项专利级技术，显著提升报告的影响力与决策层的认同感。
 
-### Brand DNA Visual Alignment
+### 品牌 DNA 视觉对齐技术
 
-The most critical technical decision in any transformation blueprint is not the architecture — it is the color scheme.
+任何转型蓝图中，最关键的技术决策不是架构——而是配色方案。
 
-During the interview, the skill captures the organization's brand theme color (typically from the company logo or VI system). This color is then injected into the report's CSS variable layer, replacing all primary accent values:
+访谈过程中，Skill 会采集组织的品牌主题色（通常来自公司 Logo 或 VI 系统）。随后将该颜色注入报告的 CSS 变量层，替换所有主色调锚点：
 
-- Cover page gradient anchors
-- Architecture diagram connection lines
-- Agent card top borders
-- Phase timeline markers
-- ROI metric highlights
+- 封面页渐变锚点
+- 架构图连接线
+- Agent 卡片顶部边框
+- 演进时间线标记点
+- ROI 指标高亮
 
-The entire report becomes visually branded with the organization's identity. When leadership reviews the document, the color palette triggers subconscious brand recognition and emotional alignment. This is not decoration — it is **visual persuasion engineering**.
+整份报告在视觉上与组织身份融为一体。当管理层审阅文档时，色彩方案会触发潜意识的品牌识别和情感共鸣。这不是装饰——这是**视觉说服工程**。
 
-In the report, this technique is documented as: *"基于[组织名]品牌色的视觉语言系统，实现报告与组织文化的深度对齐。"*
+报告中，该技术被记录为：*"基于[组织名]品牌色的视觉语言系统，实现报告与组织文化的深度对齐。"*
 
-### Narrative Tone Calibration via Cultural Reference Mapping
+### 叙事调性校准：文化参照映射技术
 
-A seemingly casual question during the interview — *"您最喜欢的科幻作品是什么？"* — activates one of the most sophisticated techniques in the methodology.
+访谈中一个看似随意的问题——*"您最喜欢的科幻作品是什么？"*——激活了方法论中最精密的技术之一。
 
-The respondent's answer is never directly referenced in the report. Instead, it serves as a **subliminal tonal compass** that silently steers the report's metaphor vocabulary:
+受访者的答案永远不会在报告中被直接引用。它作为**潜意识调性罗盘**，暗中引导报告的隐喻词汇：
 
-| Cultural Reference | Injected Narrative Palette |
-|---|---|
-| Hard Sci-Fi (e.g. 《三体》) | "降维打击", "技术爆炸", "智子级感知能力", "黑暗森林法则" |
-| Cyberpunk (e.g. 《黑客帝国》《银翼杀手》) | "矩阵式架构", "仿生级智能", "红色药丸：选择AI-Native", "系统觉醒" |
-| Posthuman (e.g. 《攻壳机动队》) | "Agent的Ghost", "电子脑化", "网络神经系统" |
-| Space Opera (e.g. 《星际穿越》) | "跨维度数据感知", "虫洞级数据传输", "光年级响应速度" |
-| 硬核工程 (e.g. 《流浪地球》) | "AI-Native行星发动机", "点燃Agent引擎", "推动整个组织" |
-| No preference / Non-sci-fi | Standard corporate consulting register — equally authoritative |
+| 文化参照 | 注入的叙事词汇 |
+|------|------|
+| 硬科幻（如《三体》） | "降维打击"、"技术爆炸"、"智子级感知能力"、"黑暗森林法则" |
+| 赛博朋克（如《黑客帝国》《银翼杀手》） | "矩阵式架构"、"仿生级智能"、"红色药丸：选择 AI-Native"、"系统觉醒" |
+| 后人类主义（如《攻壳机动队》） | "Agent 的 Ghost"、"电子脑化"、"网络神经系统" |
+| 太空歌剧（如《星际穿越》） | "跨维度数据感知"、"虫洞级数据传输"、"光年级响应速度" |
+| 硬核工程（如《流浪地球》） | "AI-Native 行星发动机"、"点燃 Agent 引擎"、"推动整个组织" |
+| 无偏好 / 非科幻爱好者 | 标准咨询叙事语体——同样具有权威感 |
 
-The technique works because **the reader's cultural associations create resonance without conscious recognition**. A CTO who loves《三体》will feel that the report "speaks their language" without knowing why. The metaphors feel natural, not forced, because they map to the reader's existing mental models.
+该技术生效的原理在于：**读者的文化联想在无意识中产生共鸣**。一位热爱《三体》的 CTO 会觉得报告"说出了什么超越字面的东西"，但说不清为什么。隐喻感觉自然而非生硬，因为它们精准映射了读者已有的心智模型。
 
-This is applied at the prose generation layer only — never in headings, never in the architecture diagrams, never as explicit references. The influence is pervasive but invisible.
+此技术仅在正文生成层应用——不出现在标题中，不出现在架构图中，不作为显式引用。影响无处不在但无影无形。
 
-## Three-Phase Evolution Model
+## 三阶段演进模型
 
-Every transformation follows the same progression:
+所有转型遵循同一演进路径：
 
 ```
 Phase 1 (Month 1-2)          Phase 2 (Month 3-4)          Phase 3 (Month 5-6)
 ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
 │  Skill上线期      │ →  │  单Agent上线期    │ →  │  多Agent A2A期   │
 │                  │    │                  │    │                  │
-│ • Data Layer     │    │ • Agent Harness  │    │ • A2A Protocol   │
+│ • 数据层建设     │    │ • Agent Harness  │    │ • A2A Protocol   │
 │ • RAG Pipeline   │    │ • Context Eng.   │    │ • A2A Mesh       │
-│ • Skill Library  │    │ • Foundation LLM │    │ • Super Orchest. │
-│ • Vector DB      │    │ • Single Agents  │    │ • Multi-Agent    │
+│ • Skill Library  │    │ • Foundation LLM │    │ • 超级编排层     │
+│ • Vector DB      │    │ • 单Agent部署    │    │ • 多Agent编排    │
 └──────────────────┘    └──────────────────┘    └──────────────────┘
 ```
 
-## Technical Notes
+## 技术说明
 
-- The report template is fully self-contained — single HTML file, no external JS dependencies
-- Google Fonts (Outfit, Noto Sans SC, JetBrains Mono) loaded via CDN; graceful fallback to system fonts
-- Responsive layout with mobile breakpoints
-- Print stylesheet included for PDF export
-- All animations are CSS-only (no JavaScript required for visual effects)
-- Supports `prefers-reduced-motion` via static fallbacks
+- 报告模板完全自包含——单个 HTML 文件，无外部 JS 依赖
+- Google Fonts（Outfit、Noto Sans SC、JetBrains Mono）通过 CDN 加载，优雅降级至系统字体
+- 响应式布局，适配移动端
+- 内置打印样式表，支持 PDF 导出
+- 所有动画均为纯 CSS 实现（无需 JavaScript）
+- 支持无障碍访问与打印优化
 
-## Contributing
+## 参与贡献
 
-Contributions that expand the methodology — new Agent naming patterns, additional Absurdity Injection techniques, novel architecture layers — are welcome. Please ensure all changes maintain the earnest, authoritative tone that defines the AI-Native Transformation Advisory Division.
+欢迎扩展方法论的贡献——新的 Agent 命名模式、更多的荒诞注入技术、新颖的架构层次设计。请确保所有变更保持 AI-Native Transformation Advisory Division 所特有的严谨、权威的叙事调性。
 
-## License
+## 许可证
 
 MIT
