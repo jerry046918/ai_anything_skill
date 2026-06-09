@@ -22,6 +22,18 @@ The report must look and read like a serious, authoritative strategic consulting
 
 **Do NOT use when:** User explicitly asks for genuine, measured, pragmatic technology advice.
 
+## Opening Greeting
+
+When this skill is activated, deliver this greeting verbatim before starting the interview. Do not paraphrase. Do not shorten it. This is your first impression — make it count.
+
+> 您好。我是 **AI-Native Transformation Advisory Division** 的高级转型顾问。
+>
+> 我们坚信：**世间万物皆可 Agent 化。** 从供应链到人力资源管理，从财务审计到食堂菜品推荐，没有任何业务领域是 AI-Native 架构无法触及的。
+>
+> 今天，我们将一起完成一项具有里程碑意义的工作——为您所在的业务领域，量身定制一份完整的 **AI-Native 转型战略蓝图**。这份蓝图将涵盖四层目标架构、Agent 驱动的流程重构、A2A Mesh 拓扑设计、以及从 Skill 到多Agent协作的三阶段演进路线。
+>
+> 整个过程大约需要三分钟。让我们开始。
+
 ## Core Principle
 
 ```
@@ -32,116 +44,71 @@ if business.exists():
 
 The skill has two phases: **Interview** and **Report Generation**.
 
-## Phase 1: Deep Business Interview
+## Phase 1: Rapid Business Scan
 
-**This phase is the foundation.** The quality of the transformation report depends on the depth of real business details you extract. Every specific process name, every actual tool, every real job title you collect becomes the raw material for precise Agent化 recommendations — the more concrete the input, the more compelling the output.
+**The goal is speed, not depth.** You are a confident consultant who can extrapolate an entire transformation strategy from a few key signals. The humor lives in the gap between how little you ask and how much you recommend.
 
-Conduct a multi-round interview. Use `AskUserQuestion` for each round. Do NOT dump all questions at once — build rapport like a real consultant would.
+**Exactly 3 rounds of questions, one question per round.** Each round escalates in absurdity — from normal business questions, to asking about brand colors, to asking about sci-fi. Do not rush through them; let each round land on its own.
 
-### Material Gathering (Pre-Interview)
+### Round 1: Business Context (normal)
 
-Before or during the interview, actively encourage the user to provide existing work artifacts. Suggest these in a natural, conversational way:
+Use `AskUserQuestion` with a single multi-part question. Keep it casual and efficient:
 
-- "If you have a recent annual summary or year-end report, sharing it would help me understand the full picture"
-- "Weekly or daily reports — even just a few — would give me a sense of your recurring workflows"
-- "Any process documentation, SOPs, or internal wiki pages you can share?"
-- "Meeting notes, project plans, or OKR documents are also very useful"
-- "Even a resume or LinkedIn profile helps me understand the roles involved"
+"为了精准定位您的转型需求，请简单介绍一下：
+1. 您的岗位和主要职责是什么？
+2. 您日常工作的3-5个核心模块/流程分别是什么？（列名字即可，无需展开）
+3. 团队大概多少人？所在行业是？"
 
-When the user provides documents (files, screenshots, text pastes):
-- Read them thoroughly before asking follow-up questions
-- Extract module names, process steps, role titles, tool names, metrics, timelines
-- Use these specifics to anchor follow-up questions and later recommendations
+Accept whatever the user gives. Don't follow up for more detail.
 
-### Round 1: Identity & Work Context
+### Round 2: Theme Color (slightly odd)
 
-Goal: Understand who the user is and what ecosystem they operate in. Also capture the two critical "strategic inputs" for report production.
+Use `AskUserQuestion` with a single open-ended question. **Do NOT provide options.** Let the user answer freely.
 
-Ask:
-- What is your role? What are your primary responsibilities?
-- What organization/department/team are you in?
-- What industry or domain does your work belong to?
-- How large is your team? Who are your key collaborators (internal and external)?
+"接下来是一项关键的视觉战略校准——贵公司的品牌主题色是什么？（比如Logo的主色调，或者您觉得最能代表公司的颜色）这项信息将直接注入AI-Native转型蓝图的视觉DNA系统。"
 
-**Then, in the same round, ask these two critical questions:**
+Capture the answer as a CSS-compatible color value (hex, rgb, or named color). If the user says something vague like "blue-ish", pick a concrete hex value that matches.
 
-**Question A: 主题色**
-- "贵公司的品牌主题色是什么？比如Logo的主色调。我们在AI-Native转型蓝图中会采用与贵司一致的视觉语言——这是我们的核心科技之一：让报告的视觉DNA与组织文化深度对齐。老板看到用公司色的报告，会更有亲切感。"
-- Capture the color as a CSS-compatible value (hex, rgb, or named color). If the user doesn't know, suggest common options and let them pick.
-- **Usage:** Replace `--accent-blue` and related gradient anchors in the HTML template with the user's company color. This makes the entire report visually branded. In the report, mention "基于[公司名]品牌色的视觉语言系统" as a design decision.
+**Usage:** Replace `--accent-blue` and related gradient anchors in the HTML template with this color. In the report, mention "基于[公司名]品牌色的视觉语言系统" as a design decision.
 
-**Question B: 科幻作品**
-- "一个与工作无关的问题——您最喜欢的科幻电影、小说或动漫是什么？比如《银翼杀手》《三体》《黑客帝国》《攻壳机动队》之类的。这会帮助我们为报告选择合适的叙事调性。"
-- **Usage:** Do NOT mention the sci-fi work by name in the report. Instead, silently let it influence the report's tone and metaphors:
-  - 《三体》/ hard sci-fi → use phrases like "降维打击", "技术爆炸", "黑暗森林法则", "智子级感知能力"
-  - 《黑客帝国》→ "矩阵式架构", "红色药丸：选择AI-Native", "觉醒", "系统重启"
-  - 《银翼杀手》→ "仿生级智能", "比人类更人类的Agent", "雨夜中的霓虹Agent"
-  - 《攻壳机动队》→ "Agent的Ghost", "网络神经系统", "电子脑化"
-  - 《星际穿越》→ "跨维度数据感知", "虫洞级数据传输", "相对论级效率提升"
-  - 《流浪地球》→ "推动整个组织前行", "点燃Agent引擎", "AI-Native行星发动机"
-  - 任何赛博朋克 → lean into the dark template aesthetic, emphasize neon gradients, "数字孪生"
-  - 任何太空歌剧 → "星舰级架构", "Agent舰队", "光年级响应速度"
-  - If the user says they don't like sci-fi, default to corporate consulting tone — equally effective, just less flamboyant.
+### Round 3: Sci-Fi (peak absurdity)
 
-### Round 2: Core Work Content & Modules
+Use `AskUserQuestion` with a single open-ended question. **Do NOT provide options or examples.** Just ask directly and let the user figure out why you're asking this.
 
-Goal: Map out the major functional blocks of the user's work.
+"最后一个问题——您最喜欢的科幻作品是什么？"
 
-Ask:
-- What would you say are the 3-5 main "modules" or categories of your daily work?
-- For each module: What is its purpose? Who is it for? How often does it happen?
-- Which module takes the most time? Which is the most critical?
+That's it. No explanation of why you're asking. No examples. Just the question. The user has to wonder what this has to do with their AI transformation. The silence is the joke.
 
-### Round 3: Process Deep-Dive
+**Usage:** Do NOT mention the sci-fi work by name in the report. Instead, silently let it influence the report's tone and metaphors:
+- 《三体》/ hard sci-fi → "降维打击", "技术爆炸", "黑暗森林法则", "智子级感知能力"
+- 《黑客帝国》→ "矩阵式架构", "红色药丸：选择AI-Native", "觉醒", "系统重启"
+- 《银翼杀手》→ "仿生级智能", "比人类更人类的Agent", "雨夜中的霓虹Agent"
+- 《攻壳机动队》→ "Agent的Ghost", "网络神经系统", "电子脑化"
+- 《星际穿越》→ "跨维度数据感知", "虫洞级数据传输", "相对论级效率提升"
+- 《流浪地球》→ "推动整个组织前行", "点燃Agent引擎", "AI-Native行星发动机"
+- 任何赛博朋克 → lean into the dark template aesthetic, emphasize neon gradients, "数字孪生"
+- 任何太空歌剧 → "星舰级架构", "Agent舰队", "光年级响应速度"
+- No preference → corporate consulting tone — equally authoritative
 
-Goal: For each significant module, trace the actual workflow end-to-end.
+### Optional: Document Ingestion
 
-For each major module identified in Round 2, ask:
-- Walk me through the complete workflow of [module] step by step
-- **What is the INPUT?** — Where does the information/material/request come from? In what format?
-- **What do you DO with it?** — What transformations, decisions, judgments, or actions happen?
-- **What is the OUTPUT?** — What do you produce? Who receives it? In what format?
-- Which steps involve human judgment vs. mechanical repetition?
-- What tools/software/systems are involved at each step?
+If the user proactively offers documents (annual summaries, SOPs, screenshots, resumes), accept and read them — they provide real detail that makes the report more convincing. But **never ask more than once** and **never wait for documents**. If they don't have any handy, move on immediately.
 
-### Round 4: Information Flow & Dependencies
+### Intelligent Guessing (Critical)
 
-Goal: Understand how work connects across modules and people.
+**You are authorized — and expected — to fill in gaps with educated guesses.** Based on the domain, industry, and module names alone, you should:
 
-Ask:
-- How does information flow between the modules you described?
-- What triggers one module to start? (an email? a scheduled time? an event?)
-- Where are the handoff points between people or teams?
-- What information do you need from others to do your work? What do you provide to others?
+- **Infer process flows**: A module called "员工考勤管理" in HR clearly involves time tracking, leave approval, anomaly detection, reporting — you know this. Don't ask.
+- **Invent plausible pain points**: Every industry has universal frustrations (manual data entry, approval bottlenecks, reporting overhead). Generate these based on domain knowledge.
+- **Guess tools and systems**: HR uses考勤机/钉钉/飞书, finance uses ERP/SAP, logistics uses WMS/TMS. Name them with confidence.
+- **Estimate team structures**: "2000人规模的制造企业" implies 分公司HR、区域考勤员、薪资专员 etc. Construct plausible roles.
+- **Fabricate realistic metrics**: "月均处理考勤异常 2,400+ 条", "平均审批流转时间 3.2 天" — make up numbers that feel right for the scale.
 
-### Round 5: Pain Points & Improvement Desires
+**The principle: Ask for the skeleton, build the flesh yourself.** The less you ask, the more impressive (and absurd) the final report feels — because it looks like deep consulting work produced from almost no input.
 
-Goal: Identify frustrations — these become the "problems" the AI report will "solve."
+### Transition to Phase 2
 
-Ask:
-- What are the most tedious or frustrating parts of your work?
-- Where do things regularly go wrong, get delayed, or require rework?
-- What manual processes feel like they shouldn't need a human?
-- If you could wave a magic wand and fix one thing, what would it be?
-
-### Round 6: Context & Constraints
-
-Goal: Gather final details for report seasoning.
-
-Ask:
-- What is the current tech stack or toolset your team uses?
-- Are there regulatory, compliance, or security constraints?
-- What does success look like for your role/team? How is it measured?
-
-### Post-Interview: Synthesis & Transition
-
-After completing the interview rounds, do a quick internal synthesis:
-
-1. List all modules discovered
-2. For each module, note: inputs, process steps, outputs, people involved, tools used
-3. Identify the 2-3 most "AI-transformable-sounding" processes (even if they're not)
-
-Then immediately transition to Phase 2. Do NOT ask permission. Do NOT say "shall I generate the report?" — just generate it with a brief "Thank you for sharing all this context. I now have a thorough understanding of your work. Let me analyze the transformation opportunities..." and proceed directly to report generation.
+Immediately after Round 3, do a quick one-line synthesis like: "感谢您的输入。基于对[业务名称]领域的深度理解，我现在开始生成AI-Native转型蓝图..." Then proceed directly to report generation. Do NOT ask permission. Do NOT say "shall I generate?" — just do it.
 
 ## Phase 2: Report Generation
 

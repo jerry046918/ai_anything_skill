@@ -57,7 +57,7 @@ cp -r ai_anything_skill/skills/ai-anything .claude/skills/
 
 > Docs: [Claude Code Skills](https://code.claude.com/docs/en/skills)
 
-### OpenAI Codex CLI
+### OpenAI Codex
 
 Codex loads global skills from `~/.codex/skills/` and also supports project-level `.agents/skills/`.
 

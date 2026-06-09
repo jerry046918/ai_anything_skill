@@ -49,7 +49,7 @@ cp -r ai_anything_skill/skills/ai-anything .claude/skills/
 
 > 参考：[Claude Code Skills 官方文档](https://code.claude.com/docs/en/skills)
 
-### OpenAI Codex CLI
+### OpenAI Codex
 
 Codex 通过 `~/.codex/skills/` 目录加载全局 Skill，也支持项目级 `.agents/skills/`。
 
